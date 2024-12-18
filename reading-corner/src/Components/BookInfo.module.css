@@ -1,0 +1,171 @@
+/* BookInfo.module.css */
+.bookList {
+	padding: 20px;
+	background-color: #ecf7fd;
+	height: 61.4vh; /* 40% of the viewport height */
+	width: 100%; /* Full width of the page */
+	box-sizing: border-box; /* Ensure padding is included in height/width */
+  }
+  
+  
+  .book-grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Increase the minimum size */
+	gap: 20px; /* Space between the grid items */
+  }
+  
+  .book-item {
+	background-color: transparent; /* Remove background */
+	border-radius: 0; /* No rounded corners */
+	box-shadow: none; /* Remove shadow */
+	transition: none; /* Disable hover effect */
+	display: flex;
+	flex-direction: column;
+	justify-content: center; /* Center all content vertically */
+	align-items: center; /* Center all content horizontally */
+	padding: 0; /* Remove padding if not needed */
+	height: auto; /* Let the height adjust to content */
+	width: 300px; /* Adjust width as needed */
+	overflow: visible; /* Allow content overflow if necessary */
+  }
+  
+  
+  
+  .book-item:hover {
+	transform: translateY(-5px); /* Slightly lift the item on hover */
+  }
+  
+  .image {
+	width: 100%;
+	height: 200px; /* Fixed height for the image */
+	border-radius: 8px;
+	margin-bottom: 15px;
+	object-fit:contain; /* Ensure the image doesn't stretch */
+  }
+  
+  .item-details {
+	display: flex;
+	flex-direction: column;
+	justify-content: center; /* Center the details vertically */
+	align-items: center; /* Center the details horizontally */
+	text-align: center; /* Align text to the center */
+	flex-grow: 1; /* Ensure the details section takes up remaining space */
+	overflow-y: auto; /* Allow scrolling if content overflows */
+  }
+  
+  .bookTitle {
+	font-size: 14px;
+	font-weight: bold;
+	color:#8f2678;
+	margin-bottom: 10px;
+  }
+  
+  
+  .authors, .publisher, .publishedDate, .categories, .pageCount, .rating {
+	margin-bottom: 8px;
+	font-size: 0.9rem; /* Slightly smaller font size to fit content */
+	color: #8f2678;
+  }
+  
+  .description {
+	font-size: 0.9rem;
+	font-weight: normal;
+	color: #eee;
+	margin-bottom: 10px;
+	height: 70px; /* Set a fixed height for the description */
+	overflow: hidden;
+	text-overflow: ellipsis;
+  }
+  
+  .previewLink {
+	color: #007BFF;
+	text-decoration: none;
+	font-weight: bold;
+  }
+  
+  .previewLink:hover {
+	text-decoration: underline;
+  }
+  
+  @media (max-width: 1024px) {
+	.book-grid {
+	  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); /* Adjust for tablets */
+	}
+  }
+  
+  @media (max-width: 768px) {
+	.book-grid {
+	  grid-template-columns: 1fr 1fr; /* Two columns for smaller tablets */
+	}
+  }
+  
+  @media (max-width: 480px) {
+	.book-grid {
+	  grid-template-columns: 1fr; /* Single column for mobile */
+	}
+  }
+
+  .monthRead {
+	display: flex;
+	align-items: center;
+	gap: 30px; /* Increase space between the image and text */
+	padding: 30px; /* Add more padding for the container */
+	max-width: 1300px; /* Increase the max-width of the container */
+	margin: 0 auto; /* Center the container */
+  }
+  
+  .monthRead img {
+	width: 120px; /* Increase the size of the image */
+	height: auto;
+	border-radius: 10px; /* Optional: to make the image corners rounded */
+  }
+  
+  .monthRead h3 {
+	margin: 0;
+	font-size: 20px; /* Increase font size for the title */
+  }
+
+  .monthRead h2 {
+	font-size: 10px;  /* Adjust the font size for the heading */
+	font-weight: bold;  /* Make the text bold */
+	color: #333;  /* Dark gray color for the heading */
+	margin-bottom: 15px;  /* Add some space below the heading */
+	text-align: center;  /* Optional: Align the heading to the center */
+	text-transform: uppercase;  /* Optional: Make the text uppercase */
+  }
+  
+  
+  .monthRead p {
+	margin: 10px 0; /* Increase margin for better spacing between paragraphs */
+	font-size: 1.2rem; /* Increase font size for better readability */
+  }
+  
+  .monthRead strong {
+	font-weight: bold;
+  }
+  
+  .monthRead a {
+	text-decoration: none; /* Remove underline from the link */
+  }
+  
+  .monthRead .item-list {
+	display: flex;
+	flex-direction: column;
+  }
+  
+  .monthRead .item-list p {
+	margin: 10px 0; /* Increase margin for paragraph spacing */
+	font-size: 1.2rem; /* Adjust the font size for better readability */
+  }
+
+  .item-list-description {
+	font-size: small;
+	color: #555;  /* Gray color for the description text */
+	line-height: 1.6; /* Add line height for better readability */
+	margin-top: 10px;
+	font-style: italic; /* Optional: You can style the description in italic */
+  }
+  
+  
+  
+  

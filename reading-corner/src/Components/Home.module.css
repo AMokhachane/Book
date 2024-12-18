@@ -1,0 +1,71 @@
+/* General Styles */
+body {
+	font-family: Arial, sans-serif;
+	margin: 0;
+	padding: 0;
+	background-color: #f8f9fa;
+	font-size: 14px; /* Smaller font size */
+	line-height: 0.2; /* Slightly reduced line height */
+  }
+  
+  
+  /* Header Section */
+  .header {
+	background-image: url('../../public/images/try.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	color:white;
+	padding: 40px 20px;
+	text-align: center;
+  }
+  
+  .header .row1 h1 {
+	font-size: 2.5rem;
+	line-height: 1.5;
+	margin-bottom: 20px;
+  }
+  
+  .header .row2 {
+	margin-top: 30px;
+  }
+  
+  .header .row2 h2 {
+	font-size: 1.8rem;
+	margin-bottom: 15px;
+  }
+  
+/* Search Bar */
+.search {
+	display: flex;
+	justify-content: flex-start; /* Align the search bar to the left */
+	align-items: center;
+	margin: 15px 0;
+  }
+  
+  .search input[type="text"] {
+	padding: 10px;
+	width: 300px;
+	border: none;
+	border-radius: 20px;
+	outline: none;
+	margin-right: 10px;
+	font-size: 1rem;
+  }
+  
+  .search button {
+	background-color: white;
+	color: #6c63ff;
+	border: none;
+	padding: 10px 20px;
+	border-radius: 20px;
+	font-size: 1rem;
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+  }
+  
+  .search button i {
+	margin-left: 5px;
+  }  
+	

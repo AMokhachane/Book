@@ -1,0 +1,47 @@
+/* Card.module.css */
+
+/* Card Container */
+.card {
+	width: 220px; /* Slightly wider for better content display */
+	margin: 15px auto;
+	border: 1px solid #e0e0e0;
+	border-radius: 12px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	overflow: hidden;
+	background-color: #ffffff;
+	transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  }
+  
+  .card:hover {
+	transform: scale(1.05);
+	box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Image Styling */
+  .image {
+	width: 100%;
+	height: 150px; /* Fixed height for consistent design */
+	object-fit: cover; /* Ensures the image is cropped correctly */
+	border-bottom: 1px solid #e0e0e0;
+  }
+  
+  /* Card Content */
+  .bottom {
+	padding: 15px;
+	text-align: center;
+  }
+  
+  .title {
+	font-size: 1.2rem;
+	font-weight: bold;
+	color: #d61111;
+	margin-bottom: 8px;
+  }
+  
+  .amount {
+	font-size: 1rem;
+	color: #c22b2b;
+	font-weight: 500;
+	margin: 0;
+  }
+  
