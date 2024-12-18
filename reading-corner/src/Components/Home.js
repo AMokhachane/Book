@@ -1,12 +1,8 @@
 import React, { useState } from "react";
-import Card from "./Card";
 import styles from './Home.module.css';
 import axios from "axios";
 import BookInfo from "./BookInfo";
 import Navbar from './Navbar';
-
-
-
 
 const Home = () => {
 	const [search,setSearch]=useState("");

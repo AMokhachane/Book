@@ -1,38 +1,25 @@
-/* General Styles */
 body {
-	font-family: Arial, sans-serif;
-	margin: 0;
-	padding: 0;
-	background-color: #f8f9fa;
-	font-size: 14px; /* Smaller font size */
-	line-height: 0.2; /* Slightly reduced line height */
+	background-color:#C4F0FD;
+	margin: 0; /* Remove default margin */
   }
-  
-  
-  /* Header Section */
-  .header {
+ 
+ .header {
 	background-image: url('../../public/images/try.jpg');
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
-	color:white;
+	color: white;
 	padding: 40px 20px;
 	text-align: center;
+	border-bottom-right-radius: 300px;
+	padding-top:5px;
+	padding-bottom: 5px;
+
   }
   
   .header .row1 h1 {
-	font-size: 2.5rem;
-	line-height: 1.5;
-	margin-bottom: 20px;
-  }
-  
-  .header .row2 {
-	margin-top: 30px;
-  }
-  
-  .header .row2 h2 {
-	font-size: 1.8rem;
-	margin-bottom: 15px;
+	font-size: 40px;
+	line-height: 1.2;
   }
   
 /* Search Bar */
@@ -40,7 +27,7 @@ body {
 	display: flex;
 	justify-content: flex-start; /* Align the search bar to the left */
 	align-items: center;
-	margin: 15px 0;
+	margin: 5px;
   }
   
   .search input[type="text"] {
@@ -54,7 +41,7 @@ body {
   }
   
   .search button {
-	background-color: white;
+	background-color: #ecf7fd;
 	color: #6c63ff;
 	border: none;
 	padding: 10px 20px;

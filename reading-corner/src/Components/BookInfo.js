@@ -27,8 +27,8 @@ const BookInfo = () => {
 
   return (
     <div className={styles.bookList}>
+      <h1 className={styles.title}>Book Club read</h1>
       <div className={styles.monthRead}>
-        <h2>This Month's Read</h2>
         <a
           href={monthReadBook.volumeInfo.previewLink}
           target="_blank"
@@ -43,11 +43,11 @@ const BookInfo = () => {
         <div className={styles["item-list"]}>
           <h3>{monthReadBook.volumeInfo.title}</h3>
           <p>
-            <strong>Author:</strong>{" "}
+            {" "}
             {monthReadBook.volumeInfo.authors?.join(", ")}
           </p>
           <p className={styles["item-list-description"]}>
-            <strong>Description:</strong> {monthReadBook.volumeInfo.description}
+             {monthReadBook.volumeInfo.description}
           </p>
         </div>
       </div>
@@ -69,7 +69,7 @@ const BookInfo = () => {
             </a>
             <div className={styles["item-details"]}>
               <p className={styles.categories}>
-                <strong>Categories:</strong>{" "}
+                {" "}
                 {book.volumeInfo.categories?.join(", ")}
               </p>
               <h2 className={styles.bookTitle}>{book.volumeInfo.title}</h2>
@@ -77,7 +77,7 @@ const BookInfo = () => {
                 {book.volumeInfo.authors?.join(", ")}
               </h3>
               <p className={styles.publishedDate}>
-                <strong>Published Date:</strong> {book.volumeInfo.publishedDate}
+                 {book.volumeInfo.publishedDate}
               </p>
               <p className={styles.pageCount}>
                 <strong>Page Count:</strong> {book.volumeInfo.pageCount}
