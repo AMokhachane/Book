@@ -3,7 +3,6 @@
 	justify-content: center; /* Center the navbar */
 	padding: 10px 20px;
 	background-color: transparent; /* No background */
-	border-bottom: 1px solid #ddd; /* Optional: light border at the bottom */
   }
   
   .navList {

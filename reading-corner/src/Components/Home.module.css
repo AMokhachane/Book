@@ -1,33 +1,32 @@
 body {
-	background-color:#C4F0FD;
+	background: linear-gradient(
+	  to bottom, 
+	  #8fc8e3,
+	  #94cce3,        /* Lighter blue */
+	  #9bd2e8,        /* Even lighter blue */
+	  #ffffff         /* Fades to white */
+	);
 	margin: 0; /* Remove default margin */
   }
- 
- .header {
-	background-image: url('../../public/images/try.jpg');
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: center;
-	color: white;
-	padding: 40px 20px;
-	text-align: center;
-	border-bottom-right-radius: 300px;
-	padding-top:5px;
-	padding-bottom: 5px;
-
-  }
   
-  .header .row1 h1 {
-	font-size: 40px;
-	line-height: 1.2;
-  }
+ 
+  .header {
+    background-image: url('../../public/images/v.png');
+    background-repeat: no-repeat;
+    background-size: 10%;
+    background-position:40px;
+    text-align: center;
+    padding-bottom: 90px;
+    position: relative; /* or absolute if needed */
+}
+
   
 /* Search Bar */
 .search {
+	position: absolute; /* Enables free positioning */
+	top: 350px; /* Adjust this to move the search box up or down */
+	left: 20px; /* Adjust this to move the search box left or right */
 	display: flex;
-	justify-content: flex-start; /* Align the search bar to the left */
-	align-items: center;
-	margin: 5px;
   }
   
   .search input[type="text"] {
@@ -54,5 +53,23 @@ body {
   
   .search button i {
 	margin-left: 5px;
-  }  
-	
+  }
+  
+   
+  .typewriter h1 {
+    overflow: hidden;
+    border-right: 2px solid white;
+    white-space: nowrap;
+    margin: 0;
+    font-size: 40px;
+    color: #04243a;
+    animation: typing 4s steps(30, end), blink-caret 0.5s step-end infinite;
+    position: relative;
+    left: 250px;
+    text-align: left;
+    font-family: 'Bubblegum Sans', cursive; /* Playful, bubbly font */
+}
+
+
+  
+  

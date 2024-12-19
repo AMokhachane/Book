@@ -1,7 +1,6 @@
 /* BookInfo.module.css */
 .bookList {
 	padding: 20px;
-	background-color: #C4F0FD;
 	height: 61.4vh; /* 40% of the viewport height */
 	width: 100%; /* Full width of the page */
 	box-sizing: border-box; /* Ensure padding is included in height/width */
@@ -79,11 +78,14 @@
   }
 
   .monthRead {
-	display: flex;
-	align-items: center;
-	gap: 15px; /* Increase space between the image and text */
-	max-width: 1300px; /* Increase the max-width of the container */
-  }
+    display: flex;
+    align-items: center;
+    gap: 15px; /* Increase space between the image and text */
+    max-width: 1300px; /* Increase the max-width of the container */
+    position: relative; /* Enables movement using top, left, or right */
+    top: -80px; /* Moves the container up */
+    left: 250px; /* Moves the container to the right */
+}
   
   .monthRead img {
 	width: 120px; /* Increase the size of the image */
@@ -95,6 +97,16 @@
 	margin: 0px; /* Add margin for spacing between author and description */
 	font-size: 20px; /* Increase font size for the title */
 	color:#1186f3;
+  }
+  
+  .monthRead h2 {
+	margin: 0px; /* No extra margin */
+	font-size: 20px; /* Adjust font size */
+	color: #04243a; /* Text color */
+	position: absolute; /* Use absolute positioning */
+	top: -30px; /* Moves the container up */
+	left: 0px; /* Moves the container to the right */
+	white-space: nowrap; /* Prevents text wrapping to keep it in one line */
   }
   
   .monthRead .item-list p {
